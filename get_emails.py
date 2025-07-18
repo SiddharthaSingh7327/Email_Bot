@@ -36,9 +36,9 @@ logger = setup_logging()
 # A NEW USER MUST EDIT THE VALUES IN THIS SECTION
 @dataclass
 class Config:
-    CLIENT_ID: str = "91d3f9fe-f30d-4409-85fa-fa4a7c24c047"
-    TENANT_ID: str = "64a9da10-e764-406f-a749-552dade47aa9"
-    GEMINI_API_KEY: str = "AIzaSyCtecm-I_JzMVNtQHsAfzRykn1XbKwuPXU"
+    CLIENT_ID: str = ""
+    TENANT_ID: str = ""
+    GEMINI_API_KEY: str = ""
     
     # Do not change the lines below
     AUTHORITY: str = ""
