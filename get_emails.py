@@ -121,7 +121,7 @@ class GeminiParser:
         
     def parse_email(self, email_body: str, email_subject: str) -> Optional[Dict]:
         prompt = f"""
-        Analyze this email. First, decide if it is a sales lead. Ignore internal emails from @eucloid.com and automated replies.
+        Analyze this email. First, decide if it is a sales lead. Ignore internal emails from XXXXXX@email.com and automated replies.
         If it is NOT a lead, respond with: {{"is_lead": false}}
         If it IS a lead, analyze its content and respond in valid JSON with the following structure. Today is {datetime.now().strftime('%Y-%m-%d')}.
         {{"is_lead": true, "lead_status": "string (e.g., New Lead, Meeting Scheduled, Proposal Sent)", "has_meeting": boolean, "subject": "string", "date": "YYYY-MM-DD", "start_time": "HH:MM", "meeting_type": "string", "action_items": "string", "deadline": "YYYY-MM-DD"}}
